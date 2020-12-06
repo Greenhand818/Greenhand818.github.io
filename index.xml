@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://Greenhand818.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Dec 2020 17:54:31 +0800</lastBuildDate><atom:link href="http://Greenhand818.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog1</title>
+      <link>http://Greenhand818.github.io/post/blog1/</link>
+      <pubDate>Sun, 06 Dec 2020 17:54:31 +0800</pubDate>
+      
+      <guid>http://Greenhand818.github.io/post/blog1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
