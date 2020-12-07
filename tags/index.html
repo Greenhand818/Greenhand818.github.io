@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>All Tags | My New Hugo Site</title>
+    <title>All Tags | Hugo Theme Dream</title>
 
     
 
 
 
-<meta name="author" content="" />
+<meta name="author" content="Greenhand818" />
 <meta name="description" content="" />
 
 
 
 <meta name="generator" content="Hugo 0.79.0" />
 
-<link rel="canonical" href="http://Greenhand818.github.io/tags/" />
+<link rel="canonical" href="https://Greenhand818.github.io/tags/" />
 
 
 <meta property="og:title" content="Tags" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://Greenhand818.github.io/tags/" />
+<meta property="og:url" content="https://Greenhand818.github.io/tags/" />
 
 
 
@@ -45,9 +45,26 @@
   }
 
   
-
+  a {
+    color: seagreen !important;
+  }
   
 
+  
+  .inverted a,
+  .inverted a:hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: black;
+    
+
+    
+  }
   
 
   
@@ -58,13 +75,13 @@
 
   <body class="default">
     
-<nav class="ui secondary menu dream-menu">
+<nav class="ui secondary inverted menu dream-menu">
 
   <div class="item">
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'http:\/\/Greenhand818.github.io\/'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/Greenhand818.github.io'"></i>
   </div>
   <div class="item">
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
@@ -83,13 +100,15 @@
   <section class="ui top attached center aligned segment">
     <div class="ui small circular image">
       
+        <img src="/img/avatar.jpg">
+      
     </div>
 
     
     <div class="ui medium header">
     
-      &#39;s blog
-      <div class="sub header" style="margin-top: 0.5rem;"></div>
+      Greenhand818&#39;s blog
+      <div class="sub header" style="margin-top: 0.5rem;">Motto</div>
     
     </div>
     
@@ -113,6 +132,12 @@
     <nav class="ui secondary menu dream-menu dream-socials">
   
   
+    <div class="item">
+      <a href="mailto:g1enyy0ung@gmail.com">
+        <i class=" mail icon" title="Email"></i>
+      </a>
+    </div>
+  
 
   
 
@@ -135,7 +160,7 @@
 
   <section class="ui bottom attached center aligned segment">
     
-      <p>© 2020 My New Hugo Site</p>
+      <p>© 2016 - 2020 Hugo Theme Dream</p>
     
 
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -177,6 +202,12 @@
         <nav class="ui secondary menu dream-menu dream-socials">
   
   
+    <div class="item">
+      <a href="mailto:g1enyy0ung@gmail.com">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
+  
 
   
 
@@ -216,7 +247,7 @@
     <script>
   window.backgroundDark =  null 
   window.backgroundImageDark =  null 
-  window.darkNav =  null 
+  window.darkNav =  true 
   window.hasTwitterEmbed =  null 
 
   if (window.hasTwitterEmbed) {

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Hugo Theme Dream</title>
+    <link>https://Greenhand818.github.io/</link>
+    <description>Recent content on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 17:54:31 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 06 Dec 2020 17:54:31 +0800</lastBuildDate><atom:link href="https://Greenhand818.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git</title>
-      <link>http://example.org/post/blog1/</link>
+      <link>https://Greenhand818.github.io/post/blog1/</link>
       <pubDate>Sun, 06 Dec 2020 17:54:31 +0800</pubDate>
       
-      <guid>http://example.org/post/blog1/</guid>
+      <guid>https://Greenhand818.github.io/post/blog1/</guid>
       <description>Git 1 基础概念 /* *Git用版本管理，主要解决版本迭代时因为版本不同出现的问题。在Git中我们可以通过本地仓库回滚到历史版本。每一 *名用户都可以同时拥有所有版本。 */ 2 Git基础命令 /* *git init（当前目录下生成.git） *git add .(添加当前目录下所有文件) *git commit -m &amp;#34;...&amp;#34;(存入本地仓库) *git remote add origin https://网址(远程仓库新命名) *git push origin master(存在master分支) *git branch(查看所有分支即当前所处分支) *git branch master(进入master分支) */ </description>
     </item>
     
