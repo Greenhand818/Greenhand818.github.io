@@ -3,26 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://greenhand818.github.io/post/blog1/</loc>
+    <loc>https://Greenhand818.github.io/</loc>
+    <lastmod>2020-12-07T11:53:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Greenhand818.github.io/post/blog2/</loc>
+    <lastmod>2020-12-07T11:53:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Greenhand818.github.io/post/</loc>
+    <lastmod>2020-12-07T11:53:09+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://Greenhand818.github.io/post/blog1/</loc>
     <lastmod>2020-12-06T17:54:31+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://greenhand818.github.io/</loc>
-    <lastmod>2020-12-06T17:54:31+08:00</lastmod>
+    <loc>https://Greenhand818.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://greenhand818.github.io/post/</loc>
-    <lastmod>2020-12-06T17:54:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://greenhand818.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://greenhand818.github.io/tags/</loc>
+    <loc>https://Greenhand818.github.io/tags/</loc>
   </url>
   
 </urlset>

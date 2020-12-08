@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaSE注意事项 | Hugo Theme Dream</title>
+
+    
+
+
+
+<meta name="author" content="Greenhand818" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.79.0" />
+
+<link rel="canonical" href="https://Greenhand818.github.io/post/blog2/" />
+
+
+<meta property="og:title" content="JavaSE注意事项" />
+<meta property="og:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于public，可以被同一个包package中的类调用！  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
+2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&gt;正则表达式) (分割)  注意：   是常量，不能改变
+  字符串(引用类型) &ldquo;==&rdquo; 比较的是地址
+  String a; a = &#34;a_c&#34;; System.out.println(a); a = &#34;b_d&#34;; System.out.println(a); /* a的地址改变了，而地址中的内容没有改变 而a.concat(String b),a.substring（int x,int y）等方法中a的地址没有变 */   " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Greenhand818.github.io/post/blog2/" />
+<meta property="article:published_time" content="2020-12-07T11:53:09+08:00" />
+<meta property="article:modified_time" content="2020-12-07T11:53:09+08:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JavaSE注意事项"/>
+<meta name="twitter:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于public，可以被同一个包package中的类调用！  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
+2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&gt;正则表达式) (分割)  注意：   是常量，不能改变
+  字符串(引用类型) &ldquo;==&rdquo; 比较的是地址
+  String a; a = &#34;a_c&#34;; System.out.println(a); a = &#34;b_d&#34;; System.out.println(a); /* a的地址改变了，而地址中的内容没有改变 而a.concat(String b),a.substring（int x,int y）等方法中a的地址没有变 */   "/>
+
+
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+<style>
+  a:hover {
+    text-decoration: underline; 
+  }
+
+  
+  a {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a,
+  .inverted a:hover {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+
+  
+</style>
+
+    
+
+
+
+
+
+
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/Greenhand818.github.io'"></i>
+  </div>
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">
+          JavaSE注意事项
+          <div class="sub header">
+            @
+            
+              
+                Greenhand818
+              
+            
+
+            | 
+                Monday, Dec 7, 2020
+              
+
+            | 1 minute read
+
+            | Update at
+              
+                Monday, Dec 7, 2020
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><h1 id="1-this">1 this</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--this可以用于在无参<span style="color:#e6db74">&#34;构造函数中调用本类&#34;</span>中的有参<span style="color:#e6db74">&#34;构造函数&#34;</span>！！
+</code></pre></div><h1 id="2-new">2 new</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--new Scanner<span style="color:#f92672">(</span>System.in<span style="color:#f92672">)</span>.next     //匿名：相当于一个参数，可以用作return等操作中，只能“写一次”
+</code></pre></div><h1 id="3泛型">3&lt;泛型&gt;</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--泛型只能是<span style="color:#e6db74">&#34;引用类型&#34;</span>
+</code></pre></div><h1 id="java-notes">Java notes：</h1>
+<ul>
+<li>变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于public，<strong>可以被同一个包package中的类调用！</strong></li>
+</ul>
+<h1 id="java方法调用注意事项">Java方法调用注意事项：</h1>
+<ul>
+<li>类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！</li>
+</ul>
+<h1 id="常用api">常用API</h1>
+<h3 id="1-arraylist--数组可变上限size求长度">1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度）</h3>
+<p><img src="C:%5CUsers%5Cxujia%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20201208191301664.png" alt="image-20201208191301664"></p>
+<p>（包装类，用于令基本类型假扮成引用类型，用作泛型！）</p>
+<h3 id="2-scanner">2 Scanner</h3>
+<h3 id="3-string">3 String</h3>
+<h4 id="方法">方法：</h4>
+<ul>
+<li>concat(连接)</li>
+<li>equals</li>
+<li>index</li>
+<li>indexOf(首个满足的字符的索引)</li>
+<li>substring(截取)</li>
+<li>replace(替换)</li>
+<li>split(分割符-&gt;<em>正则表达式</em>) (分割)</li>
+</ul>
+<h4 id="注意">注意：</h4>
+<ul>
+<li>
+<p>是常量，<strong>不能改变</strong></p>
+</li>
+<li>
+<p>字符串(引用类型) &ldquo;==&rdquo; 比较的是地址</p>
+</li>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">String a<span style="color:#f92672">;</span>
+a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a_c&#34;</span><span style="color:#f92672">;</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>a<span style="color:#f92672">);</span>
+a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;b_d&#34;</span><span style="color:#f92672">;</span>
+System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>a<span style="color:#f92672">);</span>
+<span style="color:#75715e">/*
+</span><span style="color:#75715e"> a的地址改变了，而地址中的内容没有改变
+</span><span style="color:#75715e"> 而a.concat(String b),a.substring（int x,int y）等方法中a的地址没有变
+</span><span style="color:#75715e"> */</span>
+</code></pre></div></li>
+</ul>
+</article>
+    </section>
+
+    <footer class="ui attached segment dream-tags" data-html2canvas-ignore>
+      
+          <a class="ui label">No Tags</a>
+      
+      <div
+        class="ui label"
+        style="float: right; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>Save as image
+      </div>
+    </footer>
+
+    
+
+    
+    
+    
+
+    
+
+  </div>
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+      <div class="ui segment toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-arraylist--数组可变上限size求长度">1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度）</a></li>
+        <li><a href="#2-scanner">2 Scanner</a></li>
+        <li><a href="#3-string">3 String</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+        <img src="/img/avatar.jpg">
+      
+    </div>
+
+    
+    <h1 class="ui medium header">
+    
+      Greenhand818&#39;s blog
+      <div class="sub header" style="margin-top: 0.5rem;">Motto</div>
+    
+    </h1>
+    
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+    </div>
+  </section>
+
+  
+
+  
+
+  <section class="ui attached segment header-socials">
+    <nav class="ui secondary menu dream-menu dream-socials">
+  
+  
+    <div class="item">
+      <a href="mailto:g1enyy0ung@gmail.com">
+        <i class=" mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+  </section>
+
+  <section class="ui bottom attached center aligned segment">
+    
+      <p>© 2016 - 2020 Hugo Theme Dream</p>
+    
+
+    <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+
+    
+  </section>
+</article>
+
+  </aside>
+</div>
+
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <div class="ui centered relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">Social Links</h3>
+      </div>
+      <div class="ui bottom attached segment">
+        <nav class="ui secondary menu dream-menu dream-socials">
+  
+  
+    <div class="item">
+      <a href="mailto:g1enyy0ung@gmail.com">
+        <i class="large mail icon" title="Email"></i>
+      </a>
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </section>
+
+  
+    
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.backgroundDark =  null 
+  window.backgroundImageDark =  null 
+  window.darkNav =  true 
+  window.hasTwitterEmbed =  null 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+
+
+
+    
+
+    
+  </body>
+</html>

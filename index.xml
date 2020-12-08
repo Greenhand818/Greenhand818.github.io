@@ -2,18 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo Theme Dream</title>
-    <link>https://greenhand818.github.io/</link>
+    <link>https://Greenhand818.github.io/</link>
     <description>Recent content on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Dec 2020 17:54:31 +0800</lastBuildDate><atom:link href="https://greenhand818.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 11:53:09 +0800</lastBuildDate><atom:link href="https://Greenhand818.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaSE注意事项</title>
+      <link>https://Greenhand818.github.io/post/blog2/</link>
+      <pubDate>Mon, 07 Dec 2020 11:53:09 +0800</pubDate>
+      
+      <guid>https://Greenhand818.github.io/post/blog2/</guid>
+      <description>1 this --this可以用于在无参&amp;#34;构造函数中调用本类&amp;#34;中的有参&amp;#34;构造函数&amp;#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&amp;lt;泛型&amp;gt; --泛型只能是&amp;#34;引用类型&amp;#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于public，可以被同一个包package中的类调用！  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！  常用API 1 ArrayList&amp;lt;&amp;gt;() -&amp;gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
+2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&amp;gt;正则表达式) (分割)  注意：   是常量，不能改变
+  字符串(引用类型) &amp;ldquo;==&amp;rdquo; 比较的是地址
+  String a; a = &amp;#34;a_c&amp;#34;; System.out.println(a); a = &amp;#34;b_d&amp;#34;; System.out.println(a); /* a的地址改变了，而地址中的内容没有改变 而a.concat(String b),a.substring（int x,int y）等方法中a的地址没有变 */   </description>
+    </item>
+    
     <item>
       <title>Git</title>
-      <link>https://greenhand818.github.io/post/blog1/</link>
+      <link>https://Greenhand818.github.io/post/blog1/</link>
       <pubDate>Sun, 06 Dec 2020 17:54:31 +0800</pubDate>
       
-      <guid>https://greenhand818.github.io/post/blog1/</guid>
-      <description>Git 1 基础概念 /* *Git用版本管理，主要解决版本迭代时因为版本不同出现的问题。在Git中我们可以通过本地仓库回滚到历史版本。每一 *名用户都可以同时拥有所有版本。 */ 2 Git基础命令 /* *git init（当前目录下生成.git） *git add .(添加当前目录下所有文件) *git commit -m &amp;#34;...&amp;#34;(存入本地仓库) *git remote add origin https://网址(远程仓库新命名) *git push origin master(存在master分支) *git branch(查看所有分支即当前所处分支) *git branch master(进入master分支) */ </description>
+      <guid>https://Greenhand818.github.io/post/blog1/</guid>
+      <description>Git 1 基础概念 /* Git用版本管理，主要解决版本迭代时因为版本不同出现的问题。在Git中我们可以通过本地仓库回滚到历史版本。每一 名用户都可以同时拥有所有版本。 */ 2 Git基础命令 /* git init（当前目录下生成.git） git add .(添加当前目录下所有文件) git commit -m &amp;#34;...&amp;#34;(存入本地仓库) git remote add origin https://网址(远程仓库新命名) git push origin master(存在master分支) git branch(查看所有分支即当前所处分支) git branch master(进入master分支) */ </description>
     </item>
     
   </channel>
