@@ -180,7 +180,7 @@
       <article class="ui attached segment card dream-card">
   <a class="image" href="https://Greenhand818.github.io/post/blog2/">
     
-      <img src="/img/default3.jpg" alt="JavaSE注意事项" />
+      <img src="/img/default1.jpg" alt="JavaSE注意事项" />
     
   </a>
 
@@ -204,10 +204,8 @@
       </p>
     </div>
     <div class="description">
-      1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于public，可以被同一个包package中的类调用！  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
-2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&gt;正则表达式) (分割) char[] charArrays = str.charArray()  注意：   是常量，不能改变
-  字符串(引用类型) &ldquo;==&rdquo; 比较的是地址
-  String a; a = &#34;a_c&#34;; System.out.println(a); a = &#34;b_d&#34;; System.out.println(a); /* a的地址改变了，而地址中的内容没有改变 而a.concat(String b),a.substring（int x,int y）等方法中a的地址没有变 */   
+      1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
+2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&gt;正则表达式) (分割) char[] charArrays = str.toCharArray()(String-&gt;char[])  4 Arrays (大量静态方法)  静态工厂。使用时直接Arrays.方法名([参数1]，[参数2],&hellip;) Arrays中方法大多要求参数是一个数组   5 Math (大量静态方法)  abs ceil floor round PI  注解的使用： 1 @override(可用于检测方法覆盖重写是否成功) 注意：   是常量，不能改变
     </div>
   </div>
 
@@ -225,7 +223,7 @@
       <article class="ui attached segment card dream-card">
   <a class="image" href="https://Greenhand818.github.io/post/blog1/">
     
-      <img src="/img/default4.jpg" alt="Git" />
+      <img src="/img/default1.jpg" alt="Git" />
     
   </a>
 
