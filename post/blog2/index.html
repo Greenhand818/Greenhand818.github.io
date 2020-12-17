@@ -21,8 +21,7 @@
 
 
 <meta property="og:title" content="JavaSE注意事项" />
-<meta property="og:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
-2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&gt;正则表达式) (分割) char[] charArrays = str.toCharArray()(String-&gt;char[])  4 Arrays (大量静态方法)  静态工厂。使用时直接Arrays.方法名([参数1]，[参数2],&hellip;) Arrays中方法大多要求参数是一个数组   5 Math (大量静态方法)  abs ceil floor round PI  注解的使用： 1 @override(可用于检测方法覆盖重写是否成功) 注意：   是常量，不能改变" />
+<meta property="og:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&gt;调用子类中函数，a.FuTeYou()-&gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://Greenhand818.github.io/post/blog2/" />
 <meta property="article:published_time" content="2020-12-07T11:53:09+08:00" />
@@ -32,8 +31,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaSE注意事项"/>
-<meta name="twitter:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）
-2 Scanner 3 String 方法：  concat(连接) equals index indexOf(首个满足的字符的索引) substring(截取) replace(替换) split(分割符-&gt;正则表达式) (分割) char[] charArrays = str.toCharArray()(String-&gt;char[])  4 Arrays (大量静态方法)  静态工厂。使用时直接Arrays.方法名([参数1]，[参数2],&hellip;) Arrays中方法大多要求参数是一个数组   5 Math (大量静态方法)  abs ceil floor round PI  注解的使用： 1 @override(可用于检测方法覆盖重写是否成功) 注意：   是常量，不能改变"/>
+<meta name="twitter:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&gt;调用子类中函数，a.FuTeYou()-&gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）"/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -140,7 +138,24 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--new Scanner<span style="color:#f92672">(</span>System.in<span style="color:#f92672">)</span>.next     //匿名：相当于一个参数，可以用作return等操作中，只能“写一次”
 </code></pre></div><h1 id="3泛型">3&lt;泛型&gt;</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--泛型只能是<span style="color:#e6db74">&#34;引用类型&#34;</span>
-</code></pre></div><h1 id="java-notes">Java notes：</h1>
+</code></pre></div><h1 id="4-接口">4 接口</h1>
+<ul>
+<li>abstract(必须覆盖)</li>
+<li>default</li>
+<li>static(Java 8)</li>
+<li>多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字)</li>
+<li>接口中的变量只能是public static final 常量名=值(不可变)</li>
+</ul>
+<h3 id="注意">注意：</h3>
+<ul>
+<li>父类继承函数优先于接口中<strong>同名</strong>的函数</li>
+</ul>
+<h1 id="5-多态">5 多态</h1>
+<ul>
+<li>左父 右字。 Fu a = new Zi(); <strong>a.FuZiGongyou()-&gt;调用子类中函数</strong>，a.FuTeYou()-&gt;调用父类中函数。</li>
+<li>对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)</li>
+</ul>
+<h1 id="java-notes">Java notes：</h1>
 <ul>
 <li>变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，<strong>可以被同一个包package中的类调用！</strong></li>
 <li>父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)</li>
@@ -150,6 +165,10 @@
 <li>类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！</li>
 <li>【vital】父子类的方法<strong>覆盖重写</strong>时，允许<strong>两者返回值</strong>不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！)</li>
 <li>【vital】子类方法的权限必须<strong>大于等于</strong>父类方法的权限(<!-- raw HTML omitted -->一般两者权限设置为相同的权限<!-- raw HTML omitted -->)</li>
+</ul>
+<h1 id="继承">继承</h1>
+<ul>
+<li>super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）<em>/一般用在子类中/</em></li>
 </ul>
 <h1 id="常用api">常用API</h1>
 <h3 id="1-arraylist--数组可变上限size求长度">1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度）</h3>
@@ -181,9 +200,14 @@
 <li>round</li>
 <li>PI</li>
 </ul>
+<h1 id="6-内部类">6 内部类</h1>
+<ul>
+<li>成员内部类</li>
+<li>局部内部类(匿名类)</li>
+</ul>
 <h1 id="注解的使用">注解的使用：</h1>
 <h3 id="1-override可用于检测方法覆盖重写是否成功">1 @override(可用于检测方法覆盖重写是否成功)</h3>
-<h1 id="注意">注意：</h1>
+<h1 id="注意-1">注意：</h1>
 <ul>
 <li>
 <p>是常量，<strong>不能改变</strong></p>
@@ -244,6 +268,14 @@ System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span>
     
       <div class="ui segment toc">
         <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#注意">注意：</a></li>
+      </ul>
+    </li>
+  </ul>
+
   <ul>
     <li>
       <ul>
