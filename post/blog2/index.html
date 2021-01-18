@@ -17,13 +17,13 @@
 
 <meta name="generator" content="Hugo 0.79.0" />
 
-<link rel="canonical" href="https://Greenhand818.github.io/post/blog2/" />
+<link rel="canonical" href="https://example.com/post/blog2/" />
 
 
 <meta property="og:title" content="JavaSE注意事项" />
-<meta property="og:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&gt;调用子类中函数，a.FuTeYou()-&gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）" />
+<meta property="og:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名对象：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&gt;调用子类中函数，a.FuTeYou()-&gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Greenhand818.github.io/post/blog2/" />
+<meta property="og:url" content="https://example.com/post/blog2/" />
 <meta property="article:published_time" content="2020-12-07T11:53:09+08:00" />
 <meta property="article:modified_time" content="2020-12-07T11:53:09+08:00" />
 
@@ -31,7 +31,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaSE注意事项"/>
-<meta name="twitter:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&gt;调用子类中函数，a.FuTeYou()-&gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）"/>
+<meta name="twitter:description" content="1 this --this可以用于在无参&#34;构造函数中调用本类&#34;中的有参&#34;构造函数&#34;！！ 2 new --new Scanner(System.in).next //匿名对象：相当于一个参数，可以用作return等操作中，只能“写一次” 3&lt;泛型&gt; --泛型只能是&#34;引用类型&#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&gt;调用子类中函数，a.FuTeYou()-&gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&lt;&gt;() -&gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）"/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -90,7 +90,7 @@
     <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/Greenhand818.github.io'"></i>
+    <i class="large link home icon" title="Home" onclick="window.location.href = 'https:\/\/example.com'"></i>
   </div>
   <div class="item">
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
@@ -135,7 +135,7 @@
       <article class="main"><h1 id="1-this">1 this</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--this可以用于在无参<span style="color:#e6db74">&#34;构造函数中调用本类&#34;</span>中的有参<span style="color:#e6db74">&#34;构造函数&#34;</span>！！
 </code></pre></div><h1 id="2-new">2 new</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--new Scanner<span style="color:#f92672">(</span>System.in<span style="color:#f92672">)</span>.next     //匿名：相当于一个参数，可以用作return等操作中，只能“写一次”
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--new Scanner<span style="color:#f92672">(</span>System.in<span style="color:#f92672">)</span>.next     //匿名对象：相当于一个参数，可以用作return等操作中，只能“写一次”
 </code></pre></div><h1 id="3泛型">3&lt;泛型&gt;</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">--泛型只能是<span style="color:#e6db74">&#34;引用类型&#34;</span>
 </code></pre></div><h1 id="4-接口">4 接口</h1>
@@ -202,9 +202,71 @@
 </ul>
 <h1 id="6-内部类">6 内部类</h1>
 <ul>
-<li>成员内部类</li>
-<li>局部内部类(匿名类)</li>
+<li>
+<p>成员内部类(<strong>内部类</strong>可以无条件使用<strong>外部类</strong>的数据，<strong>外部类</strong>使用<strong>内部类</strong>的数据，<em>借助内部类对象</em>)</p>
+<ul>
+<li>
+<p>调用内部类：1 外部类的方法中使用 2 外部类外，外部类.内部类 对象名= new 外部类[].内部类[];</p>
+</li>
+<li>
+<p>第2种需要<strong>先创建外部类对象</strong></p>
+</li>
+<li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">//外部类和内部类发生重名：外部类名.this.参数名
+public class Outer<span style="color:#f92672">{</span>
+   int num <span style="color:#f92672">=</span> 10;
+   public class Inner<span style="color:#f92672">{</span>
+       int num <span style="color:#f92672">=</span> 20;
+       public void methodInner<span style="color:#f92672">(){</span>
+           int num <span style="color:#f92672">=</span> 30;
+           System.out.println<span style="color:#f92672">(</span>num<span style="color:#f92672">)</span>;
+           System.out.println<span style="color:#f92672">(</span>this.num<span style="color:#f92672">)</span>;
+           System.out.println<span style="color:#f92672">(</span>Outer.this.num<span style="color:#f92672">)</span>;
+       <span style="color:#f92672">}</span>
+   <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div></li>
+<li></li>
 </ul>
+</li>
+<li>
+<p>局部内部类(<strong>匿名类</strong>等)-&gt;（<strong>定义在方法中</strong>）</p>
+</li>
+<li>
+<p>匿名内部类，用于简化、方便地使用<strong>接口方法中的重写覆盖</strong>(<em>在方法中进行</em>)</p>
+</li>
+</ul>
+<h1 id="7-类的权限">7 类的权限</h1>
+<h3 id="1-public--protected--default--private">1 public &gt; protected &gt; (default) &gt; private</h3>
+<h3 id="2-不同类的权限">2 不同类的权限</h3>
+<ul>
+<li>外部类：public/(default)</li>
+<li>成员内部类：public/protected/(default)/private</li>
+<li>局部内部类：不能加权限修饰符</li>
+</ul>
+<h1 id="8-异常处理ctrlaltt">8 异常处理（ctrl+alt+t）</h1>
+<ul>
+<li>
+<p>try，catch，finally(运行后再进行catch处理，一般用于io流等的关闭)</p>
+</li>
+<li>
+<p>throw主动抛出异常</p>
+</li>
+<li>
+<p>throws</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">divide</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> a<span style="color:#f92672">,</span><span style="color:#66d9ef">int</span> b<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> ArithmeticException<span style="color:#f92672">{</span>		<span style="color:#75715e">/*将异常抛给上一级处理或者
+</span><span style="color:#75715e">                                                               直接在方法中																			try...catch*/</span>
+    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>b<span style="color:#f92672">==</span>0<span style="color:#f92672">){</span>
+        thow <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">ArithmeticException</span><span style="color:#f92672">();</span>            <span style="color:#75715e">//抛出（产生）新异常
+</span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div></li>
+<li>
+<p>自定义异常：extends Exception</p>
+</li>
+</ul>
+<h1 id="9-io">9 IO</h1>
+<h3 id="1-fileoutputstreamwritebytes-ascii码方法写入stringgetbytes转换string到bytes类型">1 FileOutputStream(write(bytes-&gt;ASCII码)方法写入，string.getBytes转换string到bytes类型)</h3>
 <h1 id="注解的使用">注解的使用：</h1>
 <h3 id="1-override可用于检测方法覆盖重写是否成功">1 @override(可用于检测方法覆盖重写是否成功)</h3>
 <h1 id="注意-1">注意：</h1>
@@ -237,6 +299,12 @@ System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span>
 </li>
 <li>
 <p>静态代码块在该类第一次声明时<strong>执行且只执行</strong>这一次，且在构造函数执行之前执行！</p>
+</li>
+<li>
+<p><strong>局部变量在栈内存中，创建的类在堆内存中</strong></p>
+</li>
+<li>
+<p><strong>局部内部类</strong>只能使用所在的方法中定义的<strong>final局部变量</strong>(不变)。</p>
 </li>
 </ul>
 </article>
@@ -284,6 +352,23 @@ System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span>
         <li><a href="#3-string">3 String</a></li>
         <li><a href="#4-arrays-大量静态方法">4 Arrays <em>(大量静态方法)</em></a></li>
         <li><a href="#5-math-大量静态方法">5 Math <em>(大量静态方法)</em></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-public--protected--default--private">1 public &gt; protected &gt; (default) &gt; private</a></li>
+        <li><a href="#2-不同类的权限">2 不同类的权限</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-fileoutputstreamwritebytes-ascii码方法写入stringgetbytes转换string到bytes类型">1 FileOutputStream(write(bytes-&gt;ASCII码)方法写入，string.getBytes转换string到bytes类型)</a></li>
       </ul>
     </li>
   </ul>
@@ -363,7 +448,7 @@ System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span>
 
   <section class="ui bottom attached center aligned segment">
     
-      <p>© 2016 - 2020 Hugo Theme Dream</p>
+      <p>© 2016 - 2021 Hugo Theme Dream</p>
     
 
     <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
