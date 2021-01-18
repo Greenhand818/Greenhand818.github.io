@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hugo Theme Dream</title>
-    <link>https://example.com/post/</link>
+    <link>https://greenhand818.github.io/post/</link>
     <description>Recent content in Posts on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Dec 2020 11:53:09 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 11:53:09 +0800</lastBuildDate><atom:link href="https://greenhand818.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaSE注意事项</title>
-      <link>https://example.com/post/blog2/</link>
+      <link>https://greenhand818.github.io/post/blog2/</link>
       <pubDate>Mon, 07 Dec 2020 11:53:09 +0800</pubDate>
       
-      <guid>https://example.com/post/blog2/</guid>
+      <guid>https://greenhand818.github.io/post/blog2/</guid>
       <description>1 this --this可以用于在无参&amp;#34;构造函数中调用本类&amp;#34;中的有参&amp;#34;构造函数&amp;#34;！！ 2 new --new Scanner(System.in).next //匿名对象：相当于一个参数，可以用作return等操作中，只能“写一次” 3&amp;lt;泛型&amp;gt; --泛型只能是&amp;#34;引用类型&amp;#34; 4 接口  abstract(必须覆盖) default static(Java 8) 多接口继承(多个父接口中的同名default函数，在子接口中必须覆盖重写，且在定义时添加default关键字) 接口中的变量只能是public static final 常量名=值(不可变)  注意：  父类继承函数优先于接口中同名的函数  5 多态  左父 右字。 Fu a = new Zi(); a.FuZiGongyou()-&amp;gt;调用子类中函数，a.FuTeYou()-&amp;gt;调用父类中函数。 对象 instanceof 类名称 (Fu a = new Zi1(); a instanceof Zi2-&amp;gt;得到false)  Java notes：  变量，方法默认权限声明，即所谓的friend友好特性。权限仅小于protected，可以被同一个包package中的类调用！ 父类=基类(根结点，树根，地基)，子类(子节点，树枝，房子)  Java方法调用注意事项：  类值为null时，会返回NullPointerException错误，即null.方法名，是非法的！ 【vital】父子类的方法覆盖重写时，允许两者返回值不同，但子类方法的返回值不能是父类方法的返回值的父类(Object&amp;gt;String,即Object是String的父类，所以前者为子类方法的返回值，后者为父类方法的返回值是不允许的！) 【vital】子类方法的权限必须大于等于父类方法的权限(一般两者权限设置为相同的权限)  继承  super，this，局部变量原名（父类，子类本类和子类中方法中的局部变量重名）/一般用在子类中/  常用API 1 ArrayList&amp;lt;&amp;gt;() -&amp;gt;数组可变上限（.size()求长度） （包装类，用于令基本类型假扮成引用类型，用作泛型！）</description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://example.com/post/blog1/</link>
+      <link>https://greenhand818.github.io/post/blog1/</link>
       <pubDate>Sun, 06 Dec 2020 17:54:31 +0800</pubDate>
       
-      <guid>https://example.com/post/blog1/</guid>
+      <guid>https://greenhand818.github.io/post/blog1/</guid>
       <description>Git 1 基础概念 /* Git用版本管理，主要解决版本迭代时因为版本不同出现的问题。在Git中我们可以通过本地仓库回滚到历史版本。每一 名用户都可以同时拥有所有版本。 */ 2 Git基础命令 /* git init（当前目录下生成.git） git add .(添加当前目录下所有文件) git commit -m &amp;#34;...&amp;#34;(存入本地仓库) git remote add origin https://网址(远程仓库新命名) git push origin master(存在master分支) git branch(查看所有分支即当前所处分支) git branch master(进入master分支) */ </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/post/blog3/</link>
+      <link>https://greenhand818.github.io/post/blog3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/blog3/</guid>
+      <guid>https://greenhand818.github.io/post/blog3/</guid>
       <description>JavaWeb 1 Maven  导包，通过本地仓库管理jar包  2 Tomcat 3 Servlet ** Java爬虫 1 HttpClient(Http协议) 1 Get请求 public static void main(String[] args) { //创建httpClient对象  CloseableHttpClient httpClient = HttpClients.createDefault(); //创建httpGet get请求对象  HttpGet httpGet = new HttpGet(&amp;#34;http://www.baidu.com&amp;#34;); CloseableHttpResponse response = null; try { //获得响应（包含数据）  response = httpClient.execute(httpGet); if(response.getStatusLine().getStatusCode() == 200){ String content = EntityUtils.toString(response.getEntity()); System.out.println(content.length()); } } catch (IOException e) { e.printStackTrace(); }finally {	//善后：关闭连接  try { response.close(); } catch (IOException e) { e.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://example.com/post/%E5%AE%9E%E4%B9%A0/</link>
+      <link>https://greenhand818.github.io/post/%E5%AE%9E%E4%B9%A0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/%E5%AE%9E%E4%B9%A0/</guid>
+      <guid>https://greenhand818.github.io/post/%E5%AE%9E%E4%B9%A0/</guid>
       <description>实习准备 1 数据结构和算法深入
 2 内存模型和并发编程
 3 数据库事务和锁机制和索引机制
